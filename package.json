@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "/",
   "scripts": {
-    "start": "HOST=localhost PORT=3000 env-cmd -f .env.development react-scripts start",
+     "start": "set HOST=localhost&& set PORT=3000&& env-cmd -f .env.development react-scripts start",
     "start:dev": "env-cmd -f .env.dev react-scripts start",
     "start:qa": "env-cmd -f .env.qa react-scripts start",
     "start:uat": "env-cmd -f .env.uat react-scripts start",

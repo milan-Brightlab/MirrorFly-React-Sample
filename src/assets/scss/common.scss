@@ -18,11 +18,25 @@
 }
 html {
   font-size: 16px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 body {
-  font-family: $regular;
-  overflow: hidden;
+  height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 * {
