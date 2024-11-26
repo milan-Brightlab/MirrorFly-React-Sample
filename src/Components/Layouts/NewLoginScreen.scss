@@ -1,14 +1,26 @@
 
 @import '../../assets/scss/SassMixins.scss';
 
-.newLoginScreen{
-    --clr-link:rgba(40, 165, 241, 1);
-    --clr-text : #333333;
-    --clr-register-heading: rgba(24, 24, 24, 1);
-    --clr-text-light:rgba(149, 149, 149, 1);
-    .login-content{
-        @include justify-content(space-between);
-    }
+.newLoginScreen {
+  --clr-link:rgba(40, 165, 241, 1);
+  --clr-text : #333333;
+  --clr-register-heading: rgba(24, 24, 24, 1);
+  --clr-text-light:rgba(149, 149, 149, 1);
+
+  @media (max-width: 768px) {
+      height: auto;
+      min-height: 100%;
+      padding-bottom: 20px;
+  }
+
+  .login-content {
+      @include justify-content(space-between);
+      
+      @media (max-width: 768px) {
+          flex-direction: column;
+          height: auto;
+      }
+  }
     .left-col{
     max-width: 15.625em;
     @include flexbox();

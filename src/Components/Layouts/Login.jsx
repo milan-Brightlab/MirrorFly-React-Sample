@@ -561,18 +561,19 @@ class Login extends React.Component {
     let returnContent;
     if (!webChatStatus) {
       returnContent = (
-        <div className="container">
-        <div className="login-container" id="login-container">
-          {this.renderLoginTemplate()}
-          {accountDeletedToast &&
-            <div className='toast_container'>
-              <span>Your MirrorFly account has been deleted.</span>
+        <div className="login-page-wrapper">
+          <div className="container">
+            <div className="login-container" id="login-container">
+              {this.renderLoginTemplate()}
+              {accountDeletedToast &&
+                <div className='toast_container'>
+                  <span>Your MirrorFly account has been deleted.</span>
+                </div>
+              }
             </div>
-          }
+          </div>
         </div>
-      </div>
       )
-      
     } else if(showProfileScreen === true) {
       returnContent = (
         <div>
