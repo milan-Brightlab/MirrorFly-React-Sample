@@ -6,11 +6,11 @@
   "permissions": [
     "storage",
     "tabs",
-    "https://web.mirrorfly.com/"
+    "https://app.nxtonline.co.za/"
  ],
   "content_scripts": [{
       "matches": [
-          "https://web.mirrorfly.com/"
+          "https://app.nxtonline.co.za/"
       ],
       "js": ["content.js"]
   }],
